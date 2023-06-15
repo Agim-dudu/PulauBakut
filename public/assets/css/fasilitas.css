@@ -1,0 +1,83 @@
+/* Default styles */
+.wadahfasilitas {
+    margin: 100px;
+}
+
+.services {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.desc {
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
+}
+
+@media (max-width: 768px) {
+    .desc {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .desc {
+        max-width: 300px;
+    }
+}
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.services-card {
+    width: 250px;
+    height: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+.services-card img {
+    width: 100%;
+    height: auto;
+}
+
+.services-card:hover img {
+    opacity: 0.8;
+}
+
+.services-card:hover::after {
+    content: attr(data-desc);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 1;
+    z-index: 1;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #3B3B3B;
+    margin-top: 10px;
+}
+
+a {
+    color: #FE2154;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #215276;
+}
